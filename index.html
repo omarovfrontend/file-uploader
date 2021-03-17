@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="file-uploader">
+            <div class="file-uploader__inner">
+                <input type="file" id="upload-input">
+                <span class="fa fa-upload file-uploader__icon" aria-hidden="true"></span>
+                <span class="file-uploader__open-text">Выбрать файл</span>
+            </div>
+
+            <div class="selected-file">
+                <i class="fa fa-file selected-file__icon" aria-hidden="true"></i>
+                <span class="selected-file__name"></span>
+                <button type="button" class="selected-file__remove">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
+
+                <progress value="50" max="100" id="progress"></progress>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
